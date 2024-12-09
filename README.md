@@ -1,0 +1,3 @@
+# PHP unset() Gotcha: Unexpected Behavior During Array Iteration
+
+This repository demonstrates a subtle but important issue in PHP related to using the `unset()` function during array iteration.  Removing elements from an array while iterating over it using `foreach` can result in unexpected behavior due to the way the internal array pointer moves.  While seemingly harmless with null values, this practice can lead to data loss or incorrect results when handling other values. The solution provides safer alternatives.
